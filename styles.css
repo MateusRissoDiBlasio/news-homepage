@@ -20,6 +20,9 @@ header{
         width: 40px;
         height: 17px;
     }
+    #navMenuIcon:hover{
+        cursor: pointer;
+    }
     #mobileMenu{
         display: none;
         opacity: 0;
@@ -38,11 +41,16 @@ header{
             height: 30.41px;
             align-self: flex-end;
         }
+        #mobileCloseMenuIcon{
+            cursor: pointer;
+        }
         #mobileMenuButtons{
             display: flex;
             flex-direction: column;
             gap: 24px;
-            button{
+            a{
+                text-decoration: none;
+                color: hsl(236, 13%, 42%);
                 text-align: start;
                 background-color: hsl(0, 100%, 100%);
                 border: none;
@@ -51,7 +59,7 @@ header{
                 letter-spacing: 0px;
                 width: min-content;
             }
-            button:hover{
+            a:hover{
                 color: hsl(4, 85%, 63%);
             }
         }
@@ -144,7 +152,7 @@ main{
         height: 1px;
         background-color: hsl(236, 13%, 42%);
     }
-    h1{
+    h2{
         font-size: 32px;
         line-height: 32px;
         letter-spacing: 0px;
@@ -358,12 +366,18 @@ main{
 
 @media (min-width: 1024px){
 
+    body{
+        min-height: 100vh;
+        justify-content: center;
+    }
     header{
         width: 608px;
         nav{
             display: flex;
             gap: 20px;
-            button{
+            a{
+                text-decoration: none;
+                color: hsl(236, 13%, 42%);
                 padding: 0;
                 text-align: start;
                 background-color: hsl(0, 100%, 100%);
@@ -372,9 +386,8 @@ main{
                 line-height: 26px;
                 letter-spacing: 0px;
                 width: min-content;
-                color: hsl(236, 13%, 42%);
             }
-            button:hover{
+            a:hover{
                 color: hsl(4, 85%, 63%);
             }
         }
