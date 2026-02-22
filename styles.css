@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+header{
+    display: flex;
+    width: 343px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    nav{
+        display: none;
+    }
+    #logo{
+        width: 45px;
+        height: 28px;
+    }
+    #navMenuIcon{
+        width: 40px;
+        height: 17px;
+    }
+    #mobileMenu{
+        display: none;
+        opacity: 0;
+        padding: 27px 21px;
+        height: 95vh;
+        width: 256px;
+        background-color: hsl(0, 100%, 100%);
+        position: absolute;
+        top: 0;
+        /* left: 77px; */
+        right: 0;
+        flex-direction: column;
+        gap: 88px;
+        img{
+            width: 30.41px;
+            height: 30.41px;
+            align-self: flex-end;
+        }
+        #mobileMenuButtons{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            button{
+                text-align: start;
+                background-color: hsl(0, 100%, 100%);
+                border: none;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0px;
+                width: min-content;
+            }
+            button:hover{
+                color: hsl(4, 85%, 63%);
+            }
+        }
+    }
+}
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 29px 16px;
+    gap: 32px;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 343px;
+}
+#mainNews{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+#headlinerArticle{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    img{
+        width: 343px;
+        height: 300px;
+    }
+    #desktopHeadlinerArticleImage{
+        display: none;
+    }
+    #headlinerArticleTextContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        h1{
+                font-size: 40px;
+                line-height: 40px;
+                letter-spacing: 0px;
+                font-weight: 800;
+                padding-right: 20px;
+                color: hsl(240, 100%, 5%);
+            }
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            p{
+                font-size: 15px;
+                line-height: 26px;
+                letter-spacing: 0px;
+                color: hsl(236, 13%, 42%);
+            }
+            button{
+                border: none;
+                width: 185px;
+                height: 48px;
+                text-transform: uppercase;
+                background-color: hsl(4, 85%, 63%);
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 4.38px;
+                font-weight: bold;
+                color: hsl(240, 100%, 5%);
+            }
+            button:hover{
+                background-color: hsl(240, 100%, 5%);
+                color: hsl(0, 100%, 100%);
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+}
+#newsShortNotes{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 20.5px;
+    background-color: hsl(240, 100%, 5%);
+    gap: 32px;
+    width: 302px;
+    height: 457px;
+    justify-content: center;
+    hr{
+        border: none;
+        height: 1px;
+        background-color: hsl(236, 13%, 42%);
+    }
+    h1{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        color: hsl(35, 77%, 62%);
+    }
+    .newsShortNotesContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        h2{
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            font-weight: 800;
+            color: hsl(0, 100%, 100%);
+        }
+        h2:hover{
+            cursor: pointer;
+            color: hsl(35, 77%, 62%);
+        }
+        p{
+            display: flex;
+            font-size: 15px;
+            line-height: 26px;
+            letter-spacing: 0px;
+            font-weight: 200;  
+            color: hsl(233, 8%, 79%);
+        }
+    }
+}
+#newsRanking{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    .newsRankingContainer{
+        display: flex;
+        height: 129px;
+        gap: 24px;
+        h1{
+            color: hsl(4, 85%, 63%);
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: 0px;
+            font-weight: bold;
+        }
+        .newsRankingTextContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            h2{
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0px;
+                font-weight: 800;
+                color: hsl(240, 100%, 5%);
+            }
+            h2:hover{
+                cursor: pointer;
+                color: hsl(4, 85%, 63%);
+            }
+            p{
+                font-size: 15px;
+                line-height: 26px;
+                letter-spacing: 0px;
+                color: hsl(236, 13%, 42%);
+            }
+        }
+    }
+}
+
+.animateFadeIn{
+    display: flex;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+.animateFadeOut{
+    opacity: 1;
+    animation: fadeOut 0.5s ease-out 0.5s forwards;
+}
+
+.animateIconRight{
+    transition: 0.5s;
+    transform: translateX(50px);
+}
+
+.animateIconLeft{
+    transition: 0.5s;
+    transform: translateX(0px);
+}
+
+.animateIconTop{
+    transform: translateY(-50px);
+}
+
+.animateIconBottom{
+    transition: 0.5s;
+    transform: translateY(0px);
+}
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+    a { 
+        color: hsl(4, 85%, 63%);
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@media (min-width: 768px){
+    body{
+        align-items: center;
+    }
+    header{
+        width: 608px;
+        overflow: visible;
+        #mobileMenu{
+            padding: 27px 36px;
+            width: 246px;
+            right: 0;
+            #mobileMenuButtons{
+                width: 196.4px;
+            }
+        }
+    }
+    main{
+        width: 608px;
+    }
+
+    #headlinerArticle{
+        img{
+            width: 608px;
+            height: 300px;
+        }
+        #mobileHeadlinerArticleImage{
+            display: none;
+        }
+        #desktopHeadlinerArticleImage{
+            display: flex;
+        }
+    }
+    #newsShortNotes{
+        padding: 32px 40px;
+        width: 528px;
+        h1{
+            font-size: 40px;
+            line-height: 40px;
+            color: hsl(35, 77%, 62%);
+        }
+        .newsShortNotesContainer{
+            p{
+                padding-right: 25px;
+            }
+        }
+    }
+    #newsRanking{
+        .newsRankingContainer{
+            height: 127px;
+            .newsRankingTextContainer{
+                justify-content: center;
+            }
+        }
+    }
+
+    .animateFadeIn{
+        display: flex;
+        animation: fadeIn 0.5s ease-in forwards;
+    }
+
+    .animateFadeOut{
+        opacity: 1;
+        animation: fadeOut 0.5s ease-out 0.5s forwards;
+    }
+
+    .animateIconRight{
+        transition: 0.7s;
+        transform: translateX(150px);
+    }
+
+    .animateIconLeft{
+        transition: 0.7s;
+        transform: translateX(0px);
+    }
+
+    .animateIconTop{
+        transform: translate(-50px, -50px);
+    }
+
+    .animateIconBottom{
+        transition: 0.5s;
+        transform: translate(-50px, 0px);
+    }
+}
+
+@media (min-width: 1024px){
+
+    header{
+        width: 608px;
+        nav{
+            display: flex;
+            gap: 20px;
+            button{
+                padding: 0;
+                text-align: start;
+                background-color: hsl(0, 100%, 100%);
+                border: none;
+                font-size: 15px;
+                line-height: 26px;
+                letter-spacing: 0px;
+                width: min-content;
+                color: hsl(236, 13%, 42%);
+            }
+            button:hover{
+                color: hsl(4, 85%, 63%);
+            }
+        }
+        #logo{
+            width: 64px;
+            height: 40px;
+        }
+        #navMenuIcon{
+            display: none;
+        }
+        #mobileMenu{
+            display: none;
+        }
+    }
+
+}
+
+@media (min-width: 1440px){
+
+    header{
+        width: 1112px;
+        nav{
+            display: flex;
+            gap: 40px;
+            button{
+                padding: 0;
+                text-align: start;
+                background-color: hsl(0, 100%, 100%);
+                border: none;
+                font-size: 15px;
+                line-height: 26px;
+                letter-spacing: 0px;
+                width: min-content;
+                color: hsl(236, 13%, 42%);
+            }
+            button:hover{
+                color: hsl(4, 85%, 63%);
+            }
+        }
+        #logo{
+            width: 64px;
+            height: 40px;
+        }
+        #navMenuIcon{
+            display: none;
+        }
+        #mobileMenu{
+            display: none;
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 1112px;
+        gap: 64px;
+    }
+    #mainNews{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    #headlinerArticle{
+        img{
+            width: 730px;
+            height: 300px;
+        }
+        #headlinerArticleTextContainer{
+            flex-direction: row;
+            gap: 32px;
+            width: 730px;
+            height: 184px;
+            h1{
+                width: 349px;
+                height: 182px;
+                font-size: 56px;
+                line-height: 56px;
+                padding-right: 0px;
+            }
+            div{
+                width: 349px;
+                gap: 32px;
+            }
+        }
+    }
+    #newsShortNotes{
+        padding: 16px 24px;
+        width: 309px;
+        justify-content: center;
+        .newsShortNotesContainer{
+            p{
+                padding-right: 0;
+            }
+        }
+    }
+    #newsRanking{
+        flex-direction: row;
+        gap: 40px;
+        .newsRankingContainer{
+            width: 341px;
+            height: 129px;
+            img{
+                width: 100px;
+            }
+            .newsRankingTextContainer{
+                width: 219px;
+            }
+        }
+    }
+}
