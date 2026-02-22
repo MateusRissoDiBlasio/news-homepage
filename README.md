@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-Accessibility comprehension. Going deeper to assure this goal on my projects
+Accessibility comprehension. Going deeper to assure this goal on my projects.
 
 ## Author
 
