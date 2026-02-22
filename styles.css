@@ -162,14 +162,14 @@ main{
         display: flex;
         flex-direction: column;
         gap: 8px;
-        h2{
+        h3{
             font-size: 20px;
             line-height: 24px;
             letter-spacing: 0px;
             font-weight: 800;
             color: hsl(0, 100%, 100%);
         }
-        h2:hover{
+        h3:hover{
             cursor: pointer;
             color: hsl(35, 77%, 62%);
         }
@@ -314,7 +314,7 @@ main{
     #newsShortNotes{
         padding: 32px 40px;
         width: 528px;
-        h1{
+        h2{
             font-size: 40px;
             line-height: 40px;
             color: hsl(35, 77%, 62%);
@@ -412,7 +412,7 @@ main{
         nav{
             display: flex;
             gap: 40px;
-            button{
+            a{
                 padding: 0;
                 text-align: start;
                 background-color: hsl(0, 100%, 100%);
@@ -423,7 +423,7 @@ main{
                 width: min-content;
                 color: hsl(236, 13%, 42%);
             }
-            button:hover{
+            a:hover{
                 color: hsl(4, 85%, 63%);
             }
         }
