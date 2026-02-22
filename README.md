@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-news-homepage-MfL6P33dEB](https://www.frontendmentor.io/solutions/responsive-news-homepage-MfL6P33dEB)
 - Live Site URL: [https://mateusrissodiblasio.github.io/news-homepage/](https://mateusrissodiblasio.github.io/news-homepage/)
 
 ## My process
